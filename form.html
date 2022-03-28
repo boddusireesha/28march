@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form elements</title>
+    <style>
+      .container{
+        margin:400px;
+        margin-top: 20px;
+        padding: 60px;
+        border: 2px solid black;
+      }
+      body{
+        background-color:  cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Amaravathi</h1>
+    <div class="container">
+    <form
+      action="./Registrationform.java"
+      name="Registrationform"
+      method="post"
+    >
+      <label for="fname">Fname:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Lname:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <label for="state">State:</label>
+      <select id="state" name="state">
+        <option value="select one" placeholder="Select one">Select one</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option></select
+      ><br /><br />
+      <!--Radio button-->
+      <label>choose Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="transgender" name="gender" value="transgender" />
+      <label for="transgender">Transgender</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label><br /><br />
+      <!--Checkbox-->
+      <label>choose your Education</label>
+      <input type="checkbox" id="Education" name="education1" value="SSC" />
+      <label for="education1">SSC</label>
+      <input type="checkbox" id="Education2" name="education2" value="INTER" />
+      <label for="education2">INTER</label>
+      <input type="checkbox" id="Education3" name="education3" value="MCA" />
+      <label for="education3">MCA</label>
+      <input type="checkbox" id="Education4" name="education4" value="MBA" />
+      <label for="education4">MBA</label><br /><br />
+      <!--Button-->
+      <input type="button" value="Submit" name="Submit" />
+      <!--Reset button-->
+      <input type="reset" name="reset" value="Reset all" /><br /><br />
+    </form>
+  </div>
+  </body>
+</html>
